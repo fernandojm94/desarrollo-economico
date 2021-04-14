@@ -11,6 +11,9 @@
 	<link rel="stylesheet" type="text/css" href="./assets/bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="./assets/fontawesome/css/all.css">
 
+	<link rel="stylesheet" type="text/css" href="./assets/styles/css/principal.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/css/bolsa_registro.css">
+
 	<link rel="stylesheet" type="text/css" href="./assets/css/index.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/main-header.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/main-content.css">
@@ -59,6 +62,20 @@
 			        <a class="nav-link bjm" href="index.php">Inicio<span class="sr-only">(current)</span></a>
 			      </li>
 
+			      <li class="nav-item active">
+			        <a class="nav-link bjm" href="javascript:pagecontent('view/bolsa/bolsa.php');">Bolsa de Trabajo<span class="sr-only">(current)</span></a>
+			      </li>
+
+			      <li class="nav-item dropdown">
+			        <a class="nav-link dropdown-toggle bjm" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			         Bolsa de Trabajo
+			        </a>
+			        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="javascript:pagecontent('view/bolsa/listado.php');">Vacantes</a>
+			          <a class="dropdown-item" href="javascript:pagecontent('view/bolsa/bolsa.php');">Registro</a>
+			        </div>
+			      </li>
+
 			      <li class="nav-item dropdown">
 			        <a class="nav-link dropdown-toggle bjm" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			          Gobierno
@@ -86,180 +103,18 @@
 			</nav>
 		</div>
 
-		
-
 		<div class="redes">
 			<a href="https://es-la.facebook.com/JesusMariaMunicipio/" class="rsa" target="_blank"><i class="fab fa-facebook"></i></a>
 			<a href="https://www.instagram.com/jesusmaria_municipio/" class="rsa" target="_blank"><i class="fab fa-instagram"></i></a>
 			<a href="https://twitter.com/Jesus_Maria_" class="rsa" target="_blank"><i class="fab fa-twitter"></i></a>
 			<a href="https://www.youtube.com/channel/UCsrgM_afF4yD2xLY8y3fC_g" class="rsa" target="_blank"><i class="fab fa-youtube"></i></a>
 		</div>
+
 	</div>
 
-	<div id="main_content">
-		<div class="dependencias">
+	<div id="main_content"></div>
 
-			<div class="d-title">
-				<span>Dependencias</span>	
-			</div>
-
-		</div>
-
-		<div>
-			<table id="tabla_vacantes">
-				<thead></thead>
-				<tbody></tbody>
-			</table>
-		</div>
-
-		<div id="load_modal_dependencias"></div>
-		<div id="load_modal_info"></div>				
-	
-	</div>
-
-	<!-- <div class="pre-footer">
-		
-		<div class="emblem">
-			<a href="index.php">
-				<img src="./assets/img/jml_miniC.png">
-			</a>
-		</div>
-
-		<div class="mapa">
-			<div>
-				<div>
-					<a href="index.php">Inicio</a>
-				</div>
-			</div>
-
-			<div>
-				<div>
-					<span>¡Mi orgullo, mi gente!</span>
-					<ul>
-						<a href="javascript:pagecontent('view/miorgullomigente/historia.php');">
-							<li>Historia</li>
-							
-						</a>
-
-						<a href="javascript:pagecontent('view/miorgullomigente/escudo.php');">
-							<li>Escudo</li>
-							
-						</a>
-
-						<a href="javascript:pagecontent('view/miorgullomigente/datos_relevantes.php');">
-							<li>Datos Relevantes</li>
-							
-						</a>
-
-						<a href="javascript:pagecontent('view/miorgullomigente/vision.php');">
-							<li>Visión</li>
-							
-						</a>
-
-						<a href="javascript:pagecontent('view/miorgullomigente/mision.php');">
-							<li>Misión</li>
-							
-						</a>
-
-						<a href="javascript:pagecontent('view/miorgullomigente/valores_principios.php');">
-							<li>Valores y Principios</li>
-							
-						</a>
-					</ul>
-				</div>
-			</div>
-
-			<div>
-				<div>
-					<span>Gobierno</span>
-					<ul>
-						<a href="estaticos/2020/plan/Plan_de_Desarrollo_municipal_JM_2019-2021.pdf" target="_blank">
-							<li>PDM 2019-2021</li>
-							
-						</a>
-						
-						<a href="javascript:pagecontent('view/gobierno/cabildo.php');">
-							<li>Cabildo</li>
-							
-						</a>
-
-						<a href="javascript:pagecontent('view/gobierno/gabinete.php');">
-							<li>Gabinete</li>
-							
-						</a>
-
-						<a href="javascript:pagecontent('view/gobierno/directorio.php');">
-							<li>Directorio</li>
-							
-						</a>
-						
-						<a href="javascript:pagecontent('view/buzon/buzon.php');">
-							<li>Buzón de sugerencias</li>
-							
-						</a>
-					</ul>
-				</div>
-			</div>
-				
-			<div>
-				<div>
-					<span>Trámites en línea</span>
-					<ul>
-					    <div onclick="info_predial();" >
-    						<a>
-    							<li>Predial</li>
-    							
-    						</a>
-    					</div>
-
-						<a href="javascript:pagecontent('view/tramites_linea/dependencias.php');">
-							<li>Dependencias</li>
-							
-						</a>
-
-						<a href="javascript:pagecontent('view/tramites_linea/cartografia.php');">
-							<li>Cartografía</li>
-							
-						</a>
-					</ul>
-					
-				</div>
-			</div>
-
-			<div>
-				<div>
-					<a href="http://turismo.jesusmaria.gob.mx/" target="_blank">Turismo</a>
-				</div>
-			</div>
-
-			<div>
-				<div>
-					<a href="http://transparencia.jesusmaria.gob.mx/#/" target="_blank">Transparencia</a>
-				</div>
-			</div>
-
-			<div>
-				<div>
-					<span>Consulta Evaluación</span>
-					<ul>
-						<a href="http://aguascalientes.gob.mx/cplap/Docs/IMCO/2019/Externas/FISM/JESUS_MARIA/03_ASM_2018_Jesus_Maria_FISM.pdf">
-							<li>Acciones susceptibles de mejora</li>
-						</a>
-					</ul>
-					
-				</div>
-			</div>	
-		</div>
-
-		<div class="social">
-			<a href="https://es-la.facebook.com/JesusMariaMunicipio/" role="button" target="_blank"><i class="fab fa-facebook"></i></a>
-			<a href="https://www.instagram.com/jesusmaria_municipio/" role="button" target="_blank"><i class="fab fa-instagram"></i></a>
-			<a href="https://twitter.com/Jesus_Maria_" role="button" target="_blank"><i class="fab fa-twitter"></i></a>
-			<a href="https://www.youtube.com/channel/UCsrgM_afF4yD2xLY8y3fC_g" role="button" target="_blank"><i class="fab fa-youtube"></i></a>
-		</div>
-	</div> -->
-
-	<div class="footer" style="padding-top: 10px; padding-bottom: 10px;">
+	<div class="footer">
 		<div>
 			<p>Municipio de Jesús María 2019 - 2021</p>
 			<p>Coordinación de Innovación Tecnológica &middot; Copyleft &#127279; 2017 &middot; Derechos Reservados</p>
@@ -277,7 +132,7 @@
 	<script type="text/javascript">
 
 		$(document).ready( function () {
-		    $('#tabla_vacantes').DataTable();
+			$("#main_content").load("view/bolsa/listado.php");
 		} );
 	
 		function pagecontent(page){
