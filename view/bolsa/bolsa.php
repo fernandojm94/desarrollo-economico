@@ -7,7 +7,13 @@
 	</div>
 
 	<div class="registro">
-		<div class="empresa">EMPRESA</div>
-		<div class="empleado">BUSCO TRABAJO</div>
+		<div class="empresa">
+			<i class="fas fa-building fa-10x"></i>
+			<span>Empresa</span>
+		</div>
+		<div class="empleado">
+			<i class="fas fa-search fa-10x"></i>
+			<span>Busco Trabajo</span>
+		</div>
 	</div>
 </div>
