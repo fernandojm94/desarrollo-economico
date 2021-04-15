@@ -12,12 +12,12 @@
 	<link rel="stylesheet" type="text/css" href="./assets/fontawesome/css/all.css">
 
 	<link rel="stylesheet" type="text/css" href="./assets/styles/css/principal.css">
-	<link rel="stylesheet" type="text/css" href="./assets/styles/css/bolsa_registro.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/css/bolsa.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/css/footer.css">
 
 	<link rel="stylesheet" type="text/css" href="./assets/css/index.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/main-header.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/main-content.css">
-	<link rel="stylesheet" type="text/css" href="./assets/styles/css/footer.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/submenus.css">
 	
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -62,10 +62,6 @@
 			        <a class="nav-link bjm" href="index.php">Inicio<span class="sr-only">(current)</span></a>
 			      </li>
 
-			      <li class="nav-item active">
-			        <a class="nav-link bjm" href="javascript:pagecontent('view/bolsa/bolsa.php');">Bolsa de Trabajo<span class="sr-only">(current)</span></a>
-			      </li>
-
 			      <li class="nav-item dropdown">
 			        <a class="nav-link dropdown-toggle bjm" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			         Bolsa de Trabajo
@@ -73,28 +69,6 @@
 			        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 			          <a class="dropdown-item" href="javascript:pagecontent('view/bolsa/listado.php');">Vacantes</a>
 			          <a class="dropdown-item" href="javascript:pagecontent('view/bolsa/bolsa.php');">Registro</a>
-			        </div>
-			      </li>
-
-			      <li class="nav-item dropdown">
-			        <a class="nav-link dropdown-toggle bjm" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			          Gobierno
-			        </a>
-			        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-			          <a class="dropdown-item" href="estaticos/2020/plan/Plan_de_Desarrollo_municipal_JM_2019-2021.pdf" target="_blank">Plan de Desarrollo Municipal 2019-2021</a>
-			          <a class="dropdown-item" href="estaticos/2020/D.O.DISTRIBUCIONDEFONDOSFISMDFYFOTAMUNDF3970.pdf" target="_blank">D.O. DISTRIBUCIÓN DE FONDOS FISMDF Y FOTAMUNDF 3970</a>
-			          <a class="dropdown-item" href="javascript:pagecontent('view/gobierno/cabildo.php');">Cabildo</a>
-			          <a class="dropdown-item" href="javascript:pagecontent('view/gobierno/gabinete.php');">Gabinete</a>
-			          <a class="dropdown-item" href="estaticos/2020/mir/MIR2020.PDF" target="_blank">Matriz de Indicadores de Resultados</a>
-			          <a class="dropdown-item" href="javascript:pagecontent('view/gobierno/directorio.php');">Directorio</a>
-			          <a class="dropdown-item" href="javascript:pagecontent('view/sala_prensa/sala_prensa.php');">Sala de Prensa</a>
-			          <a class="dropdown-item" href="javascript:pagecontent('view/informes/index.php');">Primer Informe</a>
-			          <a class="dropdown-toggle dropdown-item" href="#" id="licitacionesLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			          Licitaciones
-			          </a>
-			          <div class="dropdown-menu" aria-labelledby="licitacionesLink">
-			            <a class="dropdown-item" href="javascript:pagecontent('view/licitaciones/licitaciones.php');">Obras Públicas</a>
-			          </div>
 			        </div>
 			      </li>
 

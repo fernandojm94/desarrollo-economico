@@ -1,0 +1,49 @@
+#tabla_vacantes thead {
+  color: white;
+  background: darkslategray;
+}
+#tabla_vacantes tbody tr.even {
+  background: lightgrey;
+}
+
+.registro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.registro div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 280px;
+  border-radius: 10px;
+  padding: 3em;
+  cursor: pointer;
+}
+.registro div span {
+  font-weight: bold;
+  font-size: 2.5em;
+  margin-top: 0.5em;
+}
+.registro .empresa {
+  color: #4dc55b;
+  transition: background 1s;
+}
+.registro .empresa span {
+  color: #1e5b25;
+}
+.registro .empresa:hover {
+  background: #d0ffd5;
+}
+.registro .empleado {
+  color: cornflowerblue;
+  transition: background 1s;
+}
+.registro .empleado span {
+  color: #1347a5;
+}
+.registro .empleado:hover {
+  background: #e4edff;
+}
+
+/*# sourceMappingURL=bolsa.css.map */
