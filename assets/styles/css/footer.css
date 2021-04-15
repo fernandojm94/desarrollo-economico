@@ -1,0 +1,172 @@
+/*DIV DEL FOOTER///////////////////////////////////*/
+@media only screen and (max-width: 950.99px) {
+  .pre-footer .mapa div {
+    width: 158px;
+  }
+
+  .pre-footer .mapa :nth-child(1) {
+    order: 1;
+  }
+
+  .pre-footer .mapa :nth-child(2) {
+    order: 4;
+  }
+
+  .pre-footer .mapa :nth-child(3) {
+    order: 5;
+  }
+
+  .pre-footer .mapa :nth-child(4) {
+    order: 6;
+  }
+
+  .pre-footer .mapa :nth-child(5) {
+    order: 2;
+  }
+
+  .pre-footer .mapa :nth-child(6) {
+    order: 3;
+  }
+
+  .pre-footer .mapa :nth-child(7) {
+    order: 7;
+  }
+}
+@media only screen and (max-width: 725.99px) {
+  .pre-footer .social {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .pre-footer .mapa {
+    width: 80% !important;
+  }
+
+  .pre-footer .mapa div {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 607.99px) {
+  .pre-footer .emblem {
+    width: 100% !important;
+  }
+
+  .pre-footer .mapa {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 489.99px) {
+  .pre-footer .mapa div {
+    padding: 5px !important;
+  }
+
+  .pre-footer .mapa :nth-child(1) {
+    order: 7;
+  }
+}
+@media only screen and (max-width: 339.99px) {
+  .pre-footer .mapa div {
+    padding: 5px 1px !important;
+    width: 120px;
+  }
+}
+.pre-footer {
+  display: flex;
+  flex-wrap: wrap;
+  /*background-color: #171f3b;*/
+  background-color: #444;
+  padding: 10px;
+}
+
+.pre-footer .emblem, .pre-footer .mapa, .pre-footer .social {
+  padding: 10px;
+}
+
+.pre-footer .emblem {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+}
+
+.pre-footer .emblem img {
+  width: auto;
+  max-height: 150px;
+  margin: auto;
+}
+
+.pre-footer .mapa {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 70%;
+  color: white;
+  font-size: 0.7em;
+}
+
+.pre-footer .mapa div {
+  padding: 5px 10px;
+}
+
+.pre-footer .mapa div div {
+  display: inline-block;
+  width: auto;
+  text-align: left;
+}
+
+.pre-footer .mapa a {
+  color: white;
+}
+
+.mapa div span {
+  font-size: 1em;
+}
+
+.mapa div ul {
+  padding-left: 12px;
+}
+
+.social {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 1.3em;
+  width: 10%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social a {
+  color: white;
+}
+
+.social a:hover {
+  color: #d4d4d4;
+}
+
+/*PRE-FOOTER ENDS////////////////////////*/
+.footer {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+  background: #45484d;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #45484d 0%, black 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #45484d 0%, black 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #45484d 0%, black 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#45484d", endColorstr="#000000",GradientType=0 );
+  /* IE6-9 */
+  width: 100%;
+  padding: 15px 0;
+}
+.footer div {
+  text-align: center;
+}
+.footer div p {
+  color: white;
+  margin-bottom: auto;
+  font-size: 0.85em;
+}
+
+/*...DIV DEL FOOTER*/
+
+/*# sourceMappingURL=footer.css.map */

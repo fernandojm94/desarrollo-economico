@@ -1,3 +1,22 @@
+#tabla_vacantes{
+
+	thead{
+		color: white;
+    	background: darkslategray;
+	}
+
+	tbody{
+
+		tr.odd{
+			
+		}
+
+		tr.even{
+			background: lightgrey;
+		}
+	}
+}
+
 .registro{
 	display: flex;
 	

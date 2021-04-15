@@ -17,7 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/index.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/main-header.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/main-content.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/main-footer.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/css/footer.css">
 	<link rel="stylesheet" type="text/css" href="./assets/css/submenus.css">
 	
 	<link rel="preconnect" href="https://fonts.gstatic.com">
