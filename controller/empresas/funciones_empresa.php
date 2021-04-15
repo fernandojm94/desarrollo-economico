@@ -19,3 +19,14 @@ function update_status($id, $status)
 
 	return $result;
 }
+
+function get_empresas()
+{
+	$sql = " SELECT nombre, empresa, domicilio, telefono, correo, vacante, cantidad, genero, edad, escolaridad, descripcion, salario, horario, prestaciones, observaciones
+				FROM get_empresas
+			 WHERE 1";
+
+	$result = querys($sql);
+
+	return $result;
+}
