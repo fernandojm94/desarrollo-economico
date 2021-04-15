@@ -1,3 +1,11 @@
+#tabla_vacantes thead {
+  color: white;
+  background: darkslategray;
+}
+#tabla_vacantes tbody tr.even {
+  background: lightgrey;
+}
+
 .registro {
   display: flex;
 }
