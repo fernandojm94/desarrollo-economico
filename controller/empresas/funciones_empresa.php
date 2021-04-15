@@ -22,9 +22,9 @@ function update_status($id, $status)
 
 function get_empresas()
 {
-	$sql = " SELECT nombre, empresa, domicilio, telefono, correo, vacante, cantidad, genero, edad, escolaridad, descripcion, salario, horario, prestaciones, observaciones
+	$sql = " SELECT id, nombre, empresa, domicilio, telefono, correo, vacante, cantidad, genero, edad, escolaridad, descripcion, salario, horario, prestaciones, observaciones, vigencia
 				FROM get_empresas
-			 WHERE 1";
+			 WHERE status = 1";
 
 	$result = querys($sql);
 

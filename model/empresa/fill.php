@@ -11,10 +11,15 @@
 	function fill_tr_empresa($empresas)
 	{
 		$tr_empresas = "";
+		$fecha = date("Y-m-d");
 
 		foreach ($empresas as $empresa) 
 		{
-			$tr_empresas.='
+			$vigente = date_diff($empresa['vigencia'], $fecha);
+
+			if($vigente >= 0)
+			{
+				$tr_empresas.='
 							<tr>								
 								<td>'.$empres['empresa'].'</td>
 								<td>'.$empres['domicilio'].'</td>
@@ -30,7 +35,10 @@
 								<td>'.$empres['prestaciones'].'</td>
 								<td>'.$empres['observaciones'].'</td>
 							</tr>
-							'
+							';
+			}else{
+				update_status($empresa['id'], 0);
+			}
 		}
 
 		return $tr_empresas;
