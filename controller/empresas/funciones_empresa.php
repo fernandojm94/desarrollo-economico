@@ -13,7 +13,7 @@ function create_empresa($nombre, $empresa, $domicilio, $telefono, $correo, $vaca
 
 function update_status($id, $status)
 {
-	$sql = "UPDATE empresa SET statud = $status WHERE id = $id";
+	$sql = "UPDATE empresa SET status = $status WHERE id = $id";
 
 	$result = querys($sql);
 

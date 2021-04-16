@@ -11,30 +11,24 @@
 	function fill_tr_empresa($empresas)
 	{
 		$tr_empresas = "";
-		$fecha = date("Y-m-d");
+
+		$fecha = date_create(date("Y-m-d"));
 
 		foreach ($empresas as $empresa) 
 		{
-			$vigente = date_diff($empresa['vigencia'], $fecha);
-			var_dump($vigente);
-
-			if($vigente >= 0)
+			$vigencia = date_create($empresa['vigencia']);
+			$vigente = date_diff($fecha, $vigencia);
+			
+			if($vigente->format("%R%a days") >= 0)
 			{
 				$tr_empresas.='
 							<tr>								
-								<td>'.$empres['empresa'].'</td>
-								<td>'.$empres['domicilio'].'</td>
-								<td>'.$empres['telefono'].'</td>
-								<td>'.$empres['correo'].'</td>
-								<td> <span>'.$empres['cantidad']."</span>".$empres['vacante'].'</td>
-								<td>'.$empres['genero'].'</td>
-								<td>'.$empres['edad'].'</td>
-								<td>'.$empres['escolaridad'].'</td>
-								<td>'.$empres['descripcion'].'</td>
-								<td>'.$empres['salario'].'</td>
-								<td>'.$empres['horario'].'</td>
-								<td>'.$empres['prestaciones'].'</td>
-								<td>'.$empres['observaciones'].'</td>
+								<td> <span>'.$empresa['cantidad']."  "."</span>".$empresa['vacante'].'</td>
+								<td>'.$empresa['empresa'].'</td>
+								<td>'.$empresa['telefono'].'</td>
+								<td>'.$empresa['domicilio'].'</td>
+								<td>'.$empresa['escolaridad'].'</td>
+								
 							</tr>
 							';
 			}else{
