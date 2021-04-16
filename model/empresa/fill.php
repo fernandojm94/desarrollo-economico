@@ -11,11 +11,12 @@
 	function fill_tr_empresa($empresas)
 	{
 		$tr_empresas = "";
-
 		$fecha = date_create(date("Y-m-d"));
 
 		foreach ($empresas as $empresa) 
 		{
+			$datos = $empresa["id"].",'".$empresa["nombre"]."','".$empresa["empresa"]."','".$empresa["domicilio"]."',".$empresa["telefono"].",'".$empresa["correo"]."','".$empresa["vacante"]."',".$empresa["cantidad"].",'".$empresa["genero"]."','".$empresa["edad"]."','".$empresa["escolaridad"]."','".$empresa["descripcion"]."','".$empresa["salario"]."','".$empresa["horario"]."','".$empresa["prestaciones"]."','".$empresa["observaciones"]."'";
+
 			$vigencia = date_create($empresa['vigencia']);
 			$vigente = date_diff($fecha, $vigencia);
 			
@@ -26,9 +27,13 @@
 								<td> <span>'.$empresa['cantidad']."  "."</span>".$empresa['vacante'].'</td>
 								<td>'.$empresa['empresa'].'</td>
 								<td>'.$empresa['telefono'].'</td>
+								<td>'.$empresa['correo'].'</td>
 								<td>'.$empresa['domicilio'].'</td>
-								<td>'.$empresa['escolaridad'].'</td>
-								
+								<td>
+									<button title="Más Información" class="btn btn-xs btn-info" onclick="fill_modal_info_vacante('.$datos.');">
+										<i class="fa fa-info"></i>
+									</button>
+								</td>
 							</tr>
 							';
 			}else{

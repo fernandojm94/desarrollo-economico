@@ -22,8 +22,8 @@
 					<th>Puesto</th>
 					<th>Empresa</th>
 					<th>Teléfono</th>
+					<th>Correo</th>
 					<th>Dirección</th>
-					<th>Escolaridad</th>
 					<th>Acciones</th>
 				</tr>
 			</thead>
@@ -34,6 +34,8 @@
 	</div>
 </div>
 
+<div id="div_modal_info_vacante"></div>
+
 <script type="text/javascript">
 	$('#tabla_vacantes').DataTable();
 </script>
@@ -41,6 +43,7 @@
 <script type="text/javascript">
 	function fill_modal_info_vacante(id, nombre, empresa, domicilio, telefono, correo, vacante, cantidad, genero, edad, escolaridad, descripcion, salario, horario, prestaciones, observaciones)
 	{
+
 		var xmlhttp;
 
         if (window.XMLHttpRequest){
@@ -58,14 +61,14 @@
 
                 document.getElementById("div_modal_info_vacante").innerHTML=xmlhttp.responseText;
                 //show_hide_modals();
-                waitingDialog.hide();
                 $('#modal_info_vacante').modal('show');
+                // waitingDialog.hide();
             }
         }
 
         var datos_modal = "id=" + id + "&nombre=" + nombre + "&empresa=" + empresa + "&domicilio=" + domicilio  + "&telefono=" + telefono  + "&correo=" + correo  + "&vacante=" + vacante  + "&cantidad=" + cantidad  + "&genero=" + genero  + "&edad=" + edad  + "&escolaridad=" + escolaridad  + "&descripcion=" + descripcion  + "&salario=" + salario  + "&horario=" + horario  + "&prestaciones=" + prestaciones  + "&observaciones=" + observaciones;
 
-        waitingDialog.show('Cargando Información', {dialogSize: 'sm', progressType: 'warning'})
+        // waitingDialog.show('Cargando Información', {dialogSize: 'sm', progressType: 'warning'})
         xmlhttp.open("POST","./view/bolsa/modal_info_vacante.php",true);
         xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
         xmlhttp.send(datos_modal);
