@@ -1,8 +1,8 @@
 <?php 
 	include("../../model/empresa/fill.php");
 	
-	$empresas = obtener_empresas(); 
-	$tr_vacante = fill_tr_empresa($empresas);
+	$vacantes = obtener_empresas(); 
+	$tr_vacante = fill_tr_empresa($vacantes);
 
 ?>
 
@@ -28,7 +28,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				$tr_vacante;
+				<?= $tr_vacante; ?>
 			</tbody>
 		</table>
 	</div>
