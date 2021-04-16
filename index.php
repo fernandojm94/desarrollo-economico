@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="background: black;">
+<html style="background: white;">
 <head>
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
