@@ -16,6 +16,7 @@
 		foreach ($empresas as $empresa) 
 		{
 			$vigente = date_diff($empresa['vigencia'], $fecha);
+			var_dump($vigente);
 
 			if($vigente >= 0)
 			{
