@@ -13,80 +13,84 @@
       </div>
       <div class="modal-body">
         <div>
-        	<div class="row">
-        		<div align="right" class="col-sm-4"><b>Nombre de quien publica:</b></div>
-        		<div class="col-sm-8"><?= $_POST['nombre']?></div>
-        	</div>
+        	<table class="table table-striped table-hover">
+				<tbody>
+					<tr><td><div class="row">
+		        		<div align="right" class="col-sm-4"><b>Nombre de quien publica:</b></div>
+		        		<div class="col-sm-8"><?= $_POST['nombre']?></div>
+		        	</div></td></tr>
 
-        	<div class="row">
-        		<div align="right" class="col-sm-4"><b>Domicilio:</b></div>
-        		<div class="col-sm-8"><?= $_POST['domicilio']?></div>
-        	</div>
+		        	<tr><td><div class="row">
+		        		<div align="right" class="col-sm-4"><b>Domicilio:</b></div>
+		        		<div class="col-sm-8"><?= $_POST['domicilio']?></div>
+		        	</div></td></tr>
 
-        	<div class="row">
-        		<div align="right" class="col-sm-4"><b>Teléfono:</b></div>
-        		<div class="col-sm-8"><?= $_POST['telefono']?></div>
-        	</div>
+		        	<tr><td><div class="row">
+		        		<div align="right" class="col-sm-4"><b>Teléfono:</b></div>
+		        		<div class="col-sm-8"><?= $_POST['telefono']?></div>
+		        	</div></td></tr>
 
-        	<div class="row">
-        		<div align="right" class="col-sm-4"><b>Correo electrónico:</b></div>
-        		<div class="col-sm-8"><?= $_POST['correo']?></div>
-        	</div>
+		        	<tr><td><div class="row">
+		        		<div align="right" class="col-sm-4"><b>Correo electrónico:</b></div>
+		        		<div class="col-sm-8"><?= $_POST['correo']?></div>
+		        	</div></td></tr>
 
-        	<div class="row">
-        		<div align="right" class="col-sm-4"><b>Vacante:</b></div>
-        		<div class="col-sm-8"><?= $_POST['vacante']?></div>
-        	</div>
+		        	<tr><td><div class="row">
+		        		<div align="right" class="col-sm-4"><b>Vacante:</b></div>
+		        		<div class="col-sm-8"><?= $_POST['vacante']?></div>
+		        	</div></td></tr>
 
-        	<div class="row">
-        		<div align="right" class="col-sm-4"><b>Cantidad de vacantes:</b></div>
-        		<div class="col-sm-8"><?= $_POST['cantidad']?></div>
-        	</div>
+		        	<tr><td><div class="row">
+		        		<div align="right" class="col-sm-4"><b>Cantidad de vacantes:</b></div>
+		        		<div class="col-sm-8"><?= $_POST['cantidad']?></div>
+		        	</div></td></tr>
 
-        	<div class="row">
-        		<div align="right" class="col-sm-4"><b>Género:</b></div>
-        		<div class="col-sm-8"><?= $_POST['genero']?></div>
-        	</div>
+		        	<tr><td><div class="row">
+		        		<div align="right" class="col-sm-4"><b>Género:</b></div>
+		        		<div class="col-sm-8"><?= $_POST['genero']?></div>
+		        	</div></td></tr>
 
-        	<div class="row">
-        		<div align="right" class="col-sm-4"><b>Edad:</b></div>
-        		<div class="col-sm-8"><?= $_POST['edad']?></div>
-        	</div>
+		        	<tr><td><div class="row">
+		        		<div align="right" class="col-sm-4"><b>Edad:</b></div>
+		        		<div class="col-sm-8"><?= $_POST['edad']?></div>
+		        	</div></td></tr>
 
-        	<div class="row">
-        		<div align="right" class="col-sm-4"><b>Escolaridad:</b></div>
-        		<div class="col-sm-8"><?= $_POST['escolaridad']?></div>
-        	</div>
+		        	<tr><td><div class="row">
+		        		<div align="right" class="col-sm-4"><b>Escolaridad:</b></div>
+		        		<div class="col-sm-8"><?= $_POST['escolaridad']?></div>
+		        	</div></td></tr>
 
-        	<div class="row">
-        		<div align="right" class="col-sm-4"><b>Descripción:</b></div>
-        		<div class="col-sm-8"><?= $_POST['descripcion']?></div>
-        	</div>
+		        	<tr><td><div class="row">
+		        		<div align="right" class="col-sm-4"><b>Descripción:</b></div>
+		        		<div class="col-sm-8"><?= $_POST['descripcion']?></div>
+		        	</div></td></tr>
 
-        	<div class="row">
-        		<div align="right" class="col-sm-4"><b>Salario:</b></div>
-        		<div class="col-sm-8"><?= $_POST['salario']?></div>
-        	</div>
+		        	<tr><td><div class="row">
+		        		<div align="right" class="col-sm-4"><b>Salario:</b></div>
+		        		<div class="col-sm-8"><?= $_POST['salario']?></div>
+		        	</div></td></tr>
 
-        	<div class="row">
-        		<div align="right" class="col-sm-4"><b>Horario:</b></div>
-        		<div class="col-sm-8"><?= $_POST['horario']?></div>
-        	</div>
+		        	<tr><td><div class="row">
+		        		<div align="right" class="col-sm-4"><b>Horario:</b></div>
+		        		<div class="col-sm-8"><?= $_POST['horario']?></div>
+		        	</div></td></tr>
 
-        	<div class="row">
-        		<div align="right" class="col-sm-4"><b>Prestaciones:</b></div>
-        		<div class="col-sm-8"><?= $_POST['prestaciones']?></div>
-        	</div>
+		        	<tr><td><div class="row">
+		        		<div align="right" class="col-sm-4"><b>Prestaciones:</b></div>
+		        		<div class="col-sm-8"><?= $_POST['prestaciones']?></div>
+		        	</div></td></tr>
 
-        	<div class="row">
-        		<div align="right" class="col-sm-4"><b>Observaciones:</b></div>
-        		<div class="col-sm-8"><?= $_POST['observaciones']?></div>
-        	</div>
+		        	<tr><td><div class="row">
+		        		<div align="right" class="col-sm-4"><b>Observaciones:</b></div>
+		        		<div class="col-sm-8"><?= $_POST['observaciones']?></div>
+		        	</div></td></tr>
+				</tbody>
+			</table>
+        	
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
