@@ -32,109 +32,109 @@
         </button>
       </div>
       <div class="modal-body">
-      	<form id="form_empresa" name="form_empresa" method="post">  
+      	<form id="form_empresa" method="post">  
 		  <div class="form-group row">
 		    <label for="nombre" class="col-sm-2 col-form-label">Nombre de quien publica:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresar nombre aquí...">
+		      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresar nombre aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="inputPassword" class="col-sm-2 col-form-label">Nombre de la Empresa:</label>
+		    <label for="empresa" class="col-sm-2 col-form-label">Nombre de la Empresa:</label>
 		    <div class="col-sm-10">
-		      <input class="form-control" id="empresa" placeholder="Ingresar empresa aquí...">
+		      <input class="form-control" id="empresa" name="empresa" placeholder="Ingresar empresa aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Domicilio:</label>
+		    <label for="domicilio" class="col-sm-2 col-form-label">Domicilio:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="domicilio" placeholder="Ingresar domicilio aquí...">
+		      <input type="text" class="form-control" id="domicilio" name="domicilio" placeholder="Ingresar domicilio aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Teléfono:</label>
+		    <label for="telefono" class="col-sm-2 col-form-label">Teléfono:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="telefono" placeholder="Ingresar teléfono aquí...">
+		      <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingresar teléfono aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Correo:</label>
+		    <label for="correo" class="col-sm-2 col-form-label">Correo:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="correo" placeholder="Ingresar correo aquí...">
+		      <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingresar correo aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Vacante:</label>
+		    <label for="vacante" class="col-sm-2 col-form-label">Vacante:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="vacante" placeholder="Ingresar vacante aquí...">
+		      <input type="text" class="form-control" id="vacante" name="vacante" placeholder="Ingresar vacante aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Cantidad:</label>
+		    <label for="cantidad" class="col-sm-2 col-form-label">Cantidad:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="cantidad" placeholder="Ingresar cantidad aquí...">
+		      <input type="number" class="form-control" id="cantidad" name="cantidad" placeholder="Ingresar cantidad aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Genero:</label>
+		    <label for="genero" class="col-sm-2 col-form-label">Genero:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="genero" placeholder="Ingresar género aquí...">
+		      <input type="text" class="form-control" id="genero" name="genero" placeholder="Ingresar género aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Edad:</label>
+		    <label for="edad" class="col-sm-2 col-form-label">Edad:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="edad" placeholder="Ingresar edad aquí...">
+		      <input type="number" class="form-control" id="edad" name="edad" placeholder="Ingresar edad aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Escolaridad:</label>
+		    <label for="escolaridad" class="col-sm-2 col-form-label">Escolaridad:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="escolaridad" placeholder="Ingresar escolaridad aquí...">
+		      <input type="text" class="form-control" id="escolaridad" name="escolaridad" placeholder="Ingresar escolaridad aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Descripción:</label>
+		    <label for="descripcion" class="col-sm-2 col-form-label">Descripción:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="descripcion" placeholder="Ingresar descripción aquí...">
+		      <input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Ingresar descripción aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Salario:</label>
+		    <label for="salario" class="col-sm-2 col-form-label">Salario:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="salario" placeholder="Ingresar salario aquí...">
+		      <input type="number" class="form-control" id="salario" name="salario" placeholder="Ingresar salario aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Horario:</label>
+		    <label for="horario" class="col-sm-2 col-form-label">Horario:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="horario" placeholder="Ingresar horario aquí...">
+		      <input type="text" class="form-control" id="horario" name="horario" placeholder="Ingresar horario aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Prestaciones:</label>
+		    <label for="prestaciones" class="col-sm-2 col-form-label">Prestaciones:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="prestaciones" placeholder="Ingresar prestaciones aquí...">
+		      <input type="text" class="form-control" id="prestaciones" name="prestaciones" placeholder="Ingresar prestaciones aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Observaciones:</label>
+		    <label for="observaciones" class="col-sm-2 col-form-label">Observaciones:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="observaciones" placeholder="Ingresar observaciones aquí...">
+		      <input type="text" class="form-control" id="observaciones" name="observaciones" placeholder="Ingresar observaciones aquí..." required>
 		    </div>
 		  </div>
 		</form>
@@ -167,56 +167,56 @@
 		  <div class="form-group row">
 		    <label for="staticEmail" class="col-sm-2 col-form-label">Nombre:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="nombre_p" placeholder="Ingresar nombre aquí...">
+		      <input type="text" class="form-control" id="nombre_p" name="nombre_p" placeholder="Ingresar nombre aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
 		    <label for="inputPassword" class="col-sm-2 col-form-label">Edad:</label>
 		    <div class="col-sm-10">
-		      <input type="password" class="form-control" id="edad_p" placeholder="Ingresar edad aquí...">
+		      <input type="password" class="form-control" id="edad_p" name="edad_p" placeholder="Ingresar edad aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
 		    <label for="staticEmail" class="col-sm-2 col-form-label">Domicilio:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="domicilio_p" placeholder="Ingresar domicilio aquí...">
+		      <input type="text" class="form-control" id="domicilio_p" name="domicilio_p" placeholder="Ingresar domicilio aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
 		    <label for="staticEmail" class="col-sm-2 col-form-label">Teléfono:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="telefono_p" placeholder="Ingresar teléfono aquí...">
+		      <input type="text" class="form-control" id="telefono_p" name="telefono_p" placeholder="Ingresar teléfono aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
 		    <label for="staticEmail" class="col-sm-2 col-form-label">Correo:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="correo_p" placeholder="Ingresar correo aquí...">
+		      <input type="text" class="form-control" id="correo_p" name="correo_p" placeholder="Ingresar correo aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
 		    <label for="staticEmail" class="col-sm-2 col-form-label">Escolaridad:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="escolaridad_p" placeholder="Ingresar escolaridad aquí...">
+		      <input type="text" class="form-control" id="escolaridad_p" name="escolaridad_p" placeholder="Ingresar escolaridad aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
 		    <label for="staticEmail" class="col-sm-2 col-form-label">Habilidades:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="habilidades_p" placeholder="Ingresar habilidades aquí...">
+		      <input type="text" class="form-control" id="habilidades_p" name="habilidades_p" placeholder="Ingresar habilidades aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
 		    <label for="staticEmail" class="col-sm-2 col-form-label">Observaciones:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="observaciones_p" placeholder="Ingresar observaciones aquí...">
+		      <input type="text" class="form-control" id="observaciones_p" name="observaciones_p" placeholder="Ingresar observaciones aquí..." required>
 		    </div>
 		  </div>
 		</form>
@@ -234,18 +234,157 @@
 	$('#form_empresa').validate({
         errorElement: 'div',
         errorClass: 'help-block',
-        focusInvalid: false,
+        focusInvalid: true,
         ignore: "",
         rules: {
             nombre: {
-        		minlength: 5
+        		minlength: 5,
+        		required: true
+        	},
+
+        	empresa: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	domicilio: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	telefono: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	correo: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	vacante: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	cantidad: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	genero: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	escolaridad: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	descripcion: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	salario: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	horario: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	prestaciones: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	observaciones: {
+        		minlength: 5,
+        		required: true
         	}
+
         },
 
         messages: {
             nombre: {
-        		minlength: "Ingresar un nombre más largo"
+        		minlength: "Favor de ingresar informacón completa",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	empresa: {
+        		minlength: "Favor de ingresar informacón completa",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	domicilio: {
+        		minlength: "Favor de ingresar informacón completa",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	telefono: {
+        		minlength: "Favor de ingresar informacón completa",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	correo: {
+        		minlength: "Favor de ingresar informacón completa",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	vacante: {
+        		minlength: "Favor de ingresar informacón completa",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	cantidad: {
+        		minlength: "Favor de ingresar informacón completa",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	genero: {
+        		minlength: "Favor de ingresar informacón completa",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	edad: {
+        		minlength: "Favor de ingresar informacón completa",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	escolaridad: {
+        		minlength: "Favor de ingresar informacón completa",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	descripcion: {
+        		minlength: "Favor de ingresar informacón completa",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	salario: {
+        		minlength: "Favor de ingresar informacón completa",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	horario: {
+        		minlength: "Favor de ingresar informacón completa",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	prestaciones: {
+        		minlength: "Favor de ingresar informacón completa",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	observaciones: {
+        		minlength: "Favor de ingresar informacón completa",
+        		required: "Favor de llenar este campo"
         	}
+
         },
 
 
@@ -335,14 +474,86 @@
         ignore: "",
         rules: {
             nombre_p: {
-        		minlength: 5
+        		minlength: 5,
+        		required: true
+        	},
+
+        	edad_p: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	domicilio_p: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	telefono_p: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	correo_p: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	escolaridad_p: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	habilidades_p: {
+        		minlength: 5,
+        		required: true
+        	},
+
+        	observaciones_p: {
+        		minlength: 5,
+        		required: true
         	}
         	
         },
 
         messages: {
             nombre_p: {
-        		minlength: "Ingresar un nombre más largo"
+        		minlength: "Favor de ingresar información completa.",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	edad_p: {
+        		minlength: "Favor de ingresar información completa.",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	domicilio_p: {
+        		minlength: "Favor de ingresar información completa.",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	telefono_p: {
+        		minlength: "Favor de ingresar información completa.",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	correo_p: {
+        		minlength: "Favor de ingresar información completa.",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	escolaridad_p: {
+        		minlength: "Favor de ingresar información completa.",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	habilidades_p: {
+        		minlength: "Favor de ingresar información completa.",
+        		required: "Favor de llenar este campo"
+        	},
+
+        	observaciones_p: {
+        		minlength: "Favor de ingresar información completa.",
+        		required: "Favor de llenar este campo"
         	}
         },
 
