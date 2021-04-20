@@ -140,8 +140,8 @@
 		</form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" form="form_empresa" class="btn btn-primary"><i class="fa fa-user"></i>Guardar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times"></i>&nbsp;Cerrar</button>
+        <button type="submit" form="form_empresa" class="btn btn-primary"><i class="fa fa-save"></i>&nbsp;Guardar</button>
       </div>
     </div>
   </div>
@@ -165,56 +165,56 @@
         
         <form id="form_trabajo" name="form_trabajo" method="post">  
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Nombre:</label>
+		    <label for="nombre_p" class="col-sm-2 col-form-label">Nombre:</label>
 		    <div class="col-sm-10">
 		      <input type="text" class="form-control" id="nombre_p" name="nombre_p" placeholder="Ingresar nombre aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="inputPassword" class="col-sm-2 col-form-label">Edad:</label>
+		    <label for="edad_p" class="col-sm-2 col-form-label">Edad:</label>
 		    <div class="col-sm-10">
-		      <input type="password" class="form-control" id="edad_p" name="edad_p" placeholder="Ingresar edad aquí..." required>
+		      <input type="number" class="form-control" id="edad_p" name="edad_p" placeholder="Ingresar edad aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Domicilio:</label>
+		    <label for="domicilio_p" class="col-sm-2 col-form-label">Domicilio:</label>
 		    <div class="col-sm-10">
 		      <input type="text" class="form-control" id="domicilio_p" name="domicilio_p" placeholder="Ingresar domicilio aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Teléfono:</label>
+		    <label for="telefono_p" class="col-sm-2 col-form-label">Teléfono:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="telefono_p" name="telefono_p" placeholder="Ingresar teléfono aquí..." required>
+		      <input type="tel" class="form-control" id="telefono_p" name="telefono_p" placeholder="Ingresar teléfono aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Correo:</label>
+		    <label for="correo_p" class="col-sm-2 col-form-label">Correo:</label>
 		    <div class="col-sm-10">
-		      <input type="text" class="form-control" id="correo_p" name="correo_p" placeholder="Ingresar correo aquí..." required>
+		      <input type="email" class="form-control" id="correo_p" name="correo_p" placeholder="Ingresar correo aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Escolaridad:</label>
+		    <label for="escolaridad_p" class="col-sm-2 col-form-label">Escolaridad:</label>
 		    <div class="col-sm-10">
 		      <input type="text" class="form-control" id="escolaridad_p" name="escolaridad_p" placeholder="Ingresar escolaridad aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Habilidades:</label>
+		    <label for="habilidades_p" class="col-sm-2 col-form-label">Habilidades:</label>
 		    <div class="col-sm-10">
 		      <input type="text" class="form-control" id="habilidades_p" name="habilidades_p" placeholder="Ingresar habilidades aquí..." required>
 		    </div>
 		  </div>
 
 		  <div class="form-group row">
-		    <label for="staticEmail" class="col-sm-2 col-form-label">Observaciones:</label>
+		    <label for="observaciones_p" class="col-sm-2 col-form-label">Observaciones:</label>
 		    <div class="col-sm-10">
 		      <input type="text" class="form-control" id="observaciones_p" name="observaciones_p" placeholder="Ingresar observaciones aquí..." required>
 		    </div>
@@ -223,8 +223,8 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <button type="submit" form="form_trabajo" class="btn btn-primary">Enviar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times"></i>&nbsp;Cerrar</button>
+        <button type="submit" form="form_trabajo" class="btn btn-primary"><i class="fa fa-save"></i>&nbsp;Guardar</button>
       </div>
     </div>
   </div>
@@ -253,7 +253,7 @@
         	},
 
         	telefono: {
-        		minlength: 5,
+        		minlength: 10,
         		required: true
         	},
 
@@ -268,12 +268,15 @@
         	},
 
         	cantidad: {
-        		minlength: 5,
         		required: true
         	},
 
         	genero: {
         		minlength: 5,
+        		required: true
+        	},
+
+        	edad: {
         		required: true
         	},
 
@@ -288,7 +291,6 @@
         	},
 
         	salario: {
-        		minlength: 5,
         		required: true
         	},
 
@@ -341,7 +343,6 @@
         	},
 
         	cantidad: {
-        		minlength: "Favor de ingresar informacón completa",
         		required: "Favor de llenar este campo"
         	},
 
@@ -366,7 +367,6 @@
         	},
 
         	salario: {
-        		minlength: "Favor de ingresar informacón completa",
         		required: "Favor de llenar este campo"
         	},
 
@@ -443,13 +443,13 @@
                 success:  function (data) {
 
                     if (data==='correcto'){
-                    	// $('#modal_update_personal').modal('hide');
+                    	$('#modal_empresa').modal('hide');
                         swal({
                             title: "Guardado correctamente!",
                             icon: "success",
                             button: "Aceptar"
                         }).then(function(){
-                        	cambiarcont('view/productos/asignar.php');
+                        	pagecontent('view/bolsa/listado.php');
                         });
                     }
 
@@ -479,7 +479,7 @@
         	},
 
         	edad_p: {
-        		minlength: 5,
+        		minlength: 2,
         		required: true
         	},
 
@@ -489,7 +489,7 @@
         	},
 
         	telefono_p: {
-        		minlength: 5,
+        		minlength: 10,
         		required: true
         	},
 
@@ -602,15 +602,17 @@
                 type:  'post',
 
                 success:  function (data) {
+                	let datos = data.split(',');
 
-                    if (data==='correcto'){
-                    	$('#modal_update_personal').modal('hide');
+                    if (datos[0]==='correcto'){
+                    	$('#modal_trabajo').modal('hide');
                         swal({
                             title: "Guardado correctamente!",
+                            text: "Se comunicarán contigo si alguna empresa está interesado en tu perfil.",
                             icon: "success",
                             button: "Aceptar"
                         }).then(function(){
-                        	cambiarcont('view/productos/asignar.php');
+                        	pagecontent('view/bolsa/bolsa.php');
                         });
                     }
 
