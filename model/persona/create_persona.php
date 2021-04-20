@@ -10,7 +10,7 @@ include('../../controller/personas/funciones_persona.php');
 	$habilidades = $_POST['habilidades'];
 	$observaciones = $_POST['observaciones'];
 	$id = 0;
-	$id = create_persona($nombre, $edad, $domicilio, $telefono, $correo, $escolaridad, $habilidades $observaciones);
+	$id = create_persona($nombre, $edad, $domicilio, $telefono, $correo, $escolaridad, $habilidades, $observaciones);
 	if($id)
 	{
 		$mensaje = "correcto, ".$id;
