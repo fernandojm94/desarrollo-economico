@@ -4,7 +4,12 @@
 	$id = $_GET['id'];
 	$status = $_GET['status'];
 
-	update_status($id, $status);
-	
-		$url = "'desarrollo-economico.jesusmaria.gob.mx'";
+	if(update_status($id, $status))
+	{
+
+	}else{
+		
+	}
+
+		$url = "'http://desarrollo-economico.test'";
 	echo $mensaje = '<meta http-equiv="Refresh" content="3; url='.$url.' "/>';
