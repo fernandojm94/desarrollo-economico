@@ -125,12 +125,12 @@ include('../../controller/empresas/funciones_empresa.php');
 						        &nbsp;Cerrar
 						        </button>
 
-						        <a type="button" class="btn btn-danger" href="http://desarrollo-economico.test/model/empresa/aprobar.php?id='.$id.'&status=0">
+						        <a type="button" class="btn btn-danger" href="http://desarrollo-economico.test/model/empresa/aprobar.php?id='.$id.'&status=0>
 						        	<i class="fa fa-ban"></i>
 						        	&nbsp;Rechazar
 						        </a>
 
-						        <a type="button" class="btn btn-success" href="http://desarrollo-economico.test/model/empresa/aprobar.php?id='.$id.'&status=1">
+						        <a type="button" class="btn btn-success" href="http://desarrollo-economico.test/model/empresa/aprobar.php?id='.$id.'&status=1>
 						        	<i class="fa fa-check"></i>
 						        	&nbsp;Aprobar
 						        </a>
