@@ -92,7 +92,7 @@
 		  <div class="form-group row">
 		    <label for="edad" class="col-sm-2 col-form-label">Edad:</label>
 		    <div class="col-sm-10">
-		      <input type="number" class="form-control" id="edad" name="edad" placeholder="Ingresar edad aquí..." required>
+		      <input type="text" class="form-control" id="edad" name="edad" placeholder="Ingresar edad aquí..." required>
 		    </div>
 		  </div>
 
@@ -113,7 +113,7 @@
 		  <div class="form-group row">
 		    <label for="salario" class="col-sm-2 col-form-label">Salario:</label>
 		    <div class="col-sm-10">
-		      <input type="number" class="form-control" id="salario" name="salario" placeholder="Ingresar salario aquí..." required>
+		      <input type="text" class="form-control" id="salario" name="salario" placeholder="Ingresar salario aquí..." required>
 		    </div>
 		  </div>
 
