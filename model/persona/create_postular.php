@@ -1,28 +1,22 @@
 <?php
-include('../../controller/empresas/funciones_empresa.php');
+<?php
+include('../../controller/personas/funciones_persona.php');
+
+
 	$nombre = $_POST['nombre'];
-	$empresa = $_POST['empresa'];
+	$edad = $_POST['edad'];
 	$domicilio = $_POST['domicilio'];
 	$telefono = $_POST['telefono'];
-	$correo = $_POST['correo'];
-	$vacante = $_POST['vacante'];
-	$cantidad = $_POST['cantidad'];
-	$genero = $_POST['genero'];
-	$edad = $_POST['edad'];
+	$correo = $_POST['correo'];	
 	$escolaridad = $_POST['escolaridad'];
-	$descripcion = $_POST['descripcion'];
-	$salario = $_POST['salario'];
-	$horario = $_POST['horario'];
-	$prestaciones = $_POST['prestaciones'];
+	$habilidades = $_POST['habilidades'];
 	$observaciones = $_POST['observaciones'];
-	$fecha = date("Y-m-d");
-	$vigencia = date("Y-m-d",strtotime($fecha."+ 1 month")); 
 	$id = 0;
-	$id = create_empresa($nombre, $empresa, $domicilio, $telefono, $correo, $vacante, $cantidad, $genero, $edad, $escolaridad, $descripcion, $salario, $horario, $prestaciones, $observaciones, $vigencia);
+	$id = create_persona($nombre, $edad, $domicilio, $telefono, $correo, $escolaridad, $habilidades, $observaciones);
 	if($id)
 	{
-		$para = 'jose.espino@jesusmaria.gob.mx';
-		$titulo = 'Alta de Empresa';
+			$para = 'jose.espino@jesusmaria.gob.mx';
+		$titulo = 'Alta de Persona';
 		$cabeceras = 'From: bolsa-tranajo@jesusmaria.gob.mx' . "\r\n" .
 				    'Reply-To: jose.espino@jesusmaria.gob.mx' . "\r\n" .
 				    'X-Mailer: PHP/' . phpversion();
@@ -66,47 +60,17 @@ include('../../controller/empresas/funciones_empresa.php');
 
 								        	<tr><td><div class="row">
 								        		<div align="right" class="col-sm-4"><b>Vacante:</b></div>
-								        		<div class="col-sm-8">'.$_POST['vacante'].'</div>
-								        	</div></td></tr>
-
-								        	<tr><td><div class="row">
-								        		<div align="right" class="col-sm-4"><b>Cantidad de vacantes:</b></div>
-								        		<div class="col-sm-8">'.$_POST['cantidad'].'</div>
-								        	</div></td></tr>
-
-								        	<tr><td><div class="row">
-								        		<div align="right" class="col-sm-4"><b>Género:</b></div>
-								        		<div class="col-sm-8">'.$_POST['genero'].'</div>
-								        	</div></td></tr>
-
-								        	<tr><td><div class="row">
-								        		<div align="right" class="col-sm-4"><b>Edad:</b></div>
 								        		<div class="col-sm-8">'.$_POST['edad'].'</div>
 								        	</div></td></tr>
-
+								        	
 								        	<tr><td><div class="row">
 								        		<div align="right" class="col-sm-4"><b>Escolaridad:</b></div>
 								        		<div class="col-sm-8">'.$_POST['escolaridad'].'</div>
 								        	</div></td></tr>
-
-								        	<tr><td><div class="row">
-								        		<div align="right" class="col-sm-4"><b>Descripción:</b></div>
-								        		<div class="col-sm-8">'.$_POST['descripcion'].'</div>
-								        	</div></td></tr>
-
-								        	<tr><td><div class="row">
-								        		<div align="right" class="col-sm-4"><b>Salario:</b></div>
-								        		<div class="col-sm-8">'.$_POST['salario'].'</div>
-								        	</div></td></tr>
-
-								        	<tr><td><div class="row">
-								        		<div align="right" class="col-sm-4"><b>Horario:</b></div>
-								        		<div class="col-sm-8">'.$_POST['horario'].'</div>
-								        	</div></td></tr>
-
+								        	
 								        	<tr><td><div class="row">
 								        		<div align="right" class="col-sm-4"><b>Prestaciones:</b></div>
-								        		<div class="col-sm-8">'.$_POST['prestaciones'].'</div>
+								        		<div class="col-sm-8">'.$_POST['habilidades'].'</div>
 								        	</div></td></tr>
 
 								        	<tr><td><div class="row">
@@ -119,22 +83,7 @@ include('../../controller/empresas/funciones_empresa.php');
 						        </div>
 						      </div>
 						      <div class="modal-footer">
-
-						        <button type="button" class="btn btn-secondary" data-dismiss="modal">
-						        <i class="fa fa-times"></i>
-						        &nbsp;Cerrar
-						        </button>
-
-						        <a type="button" class="btn btn-danger" href="http://desarrollo-economico.test/model/empresa/aprobar.php?id='.$id.'&status=0>
-						        	<i class="fa fa-ban"></i>
-						        	&nbsp;Rechazar
-						        </a>
-
-						        <a type="button" class="btn btn-success" href="http://desarrollo-economico.test/model/empresa/aprobar.php?id='.$id.'&status=1>
-						        	<i class="fa fa-check"></i>
-						        	&nbsp;Aprobar
-						        </a>
-
+						        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
 						      </div>
 						    </div>
 						  </div>
@@ -142,7 +91,8 @@ include('../../controller/empresas/funciones_empresa.php');
 					';
 
 	mail($para, $titulo, $mensaje, $cabeceras);
-		$mensaje = "correcto";
+
+		$mensaje = "correcto, ".$id;
 	}else{
 		$mensaje = "error";
 	}

@@ -130,6 +130,9 @@
 	<script type="text/javascript" src="./assets/js/droptoggle.js"></script>
 	<script type="text/javascript" src="./assets/js/sweetalert.min.js"></script>
 
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+
+
 
 </body>
 </html>

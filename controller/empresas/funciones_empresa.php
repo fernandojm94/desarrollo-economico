@@ -24,7 +24,7 @@ function get_empresas()
 {
 	$sql = " SELECT id, nombre, empresa, domicilio, telefono, correo, vacante, cantidad, genero, edad, escolaridad, descripcion, salario, horario, prestaciones, observaciones, vigencia
 				FROM empresa
-			 WHERE status = 1";
+			 WHERE status = 1 ORDER BY id DESC";
 
 	$result = querys($sql);
 
