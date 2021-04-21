@@ -1,5 +1,4 @@
 <?php
-<?php
 include('../../controller/personas/funciones_persona.php');
 
 
