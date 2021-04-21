@@ -24,10 +24,10 @@
 			{
 				$tr_empresas.='
 							<tr>								
-								<td> <span>'.$empresa['cantidad']."  "."</span>".$empresa['vacante'].'</td>
+								<td> <span>'.$empresa['cantidad']." - "."</span>".$empresa['vacante'].'</td>
 								<td>'.$empresa['empresa'].'</td>
-								<td>'.$empresa['telefono'].'</td>
-								<td>'.$empresa['correo'].'</td>
+								<td>'.$empresa['salario'].'</td>
+								<td>'.$empresa['horario'].'</td>
 								<td>'.$empresa['domicilio'].'</td>
 								<td>
 									<button title="Más Información" class="btn btn-xs btn-info" onclick="fill_modal_info_vacante('.$datos.');">
