@@ -19,10 +19,10 @@
 		<table id="tabla_vacantes">
 			<thead>
 				<tr>
-					<th>Puesto</th>
+					<th>Cantidad - Puesto</th>
 					<th>Empresa</th>
-					<th>Teléfono</th>
-					<th>Correo</th>
+					<th>Salario</th>
+					<th>Horario</th>
 					<th>Dirección</th>
 					<th>Acciones</th>
 				</tr>
@@ -184,7 +184,7 @@
 	                	let datos = data.split(',');
 
 	                    if (datos[0]==='correcto'){
-	                    	$('#modal_trabajo').modal('hide');
+	                    	$('.modal').modal('hide');
 	                        swal({
 	                            title: "Guardado correctamente!",
 	                            text: "Se comunicarán contigo si alguna empresa está interesado en tu perfil.",
