@@ -90,7 +90,12 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fa fa-times"></i>&nbsp;Cerrar</button>
+
+        <button class="btn btn-primary" onclick="postularme(<?= $_POST['id'];?>, '<?= $_POST['empresa'];?>', '<?=$_POST['vacante'];?>')">
+        	<i class="fa fa-user-plus"></i>
+        	&nbsp;Postularme
+        </button>
       </div>
     </div>
   </div>
