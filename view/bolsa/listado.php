@@ -24,7 +24,7 @@
 					<th>Salario</th>
 					<th>Horario</th>
 					<th>Dirección</th>
-					<th>Acciones</th>
+					<th style="background: none;">Acciones</th>
 				</tr>
 			</thead>
 			<tbody>

@@ -43,13 +43,16 @@ table.dataTable thead .sorting_desc_disabled {
   background-position: center right;
 }
 table.dataTable thead .sorting {
-  background-image: url("../images/sort_both.png");
+  background-image: url("../fontawesome/svgs/solid/sortc.svg");
+  background-size: 12px;
 }
 table.dataTable thead .sorting_asc {
-  background-image: url("../images/sort_asc.png");
+  background-image: url("../fontawesome/svgs/solid/sort-upc.svg");
+  background-size: 12px;
 }
 table.dataTable thead .sorting_desc {
-  background-image: url("../images/sort_desc.png");
+  background-image: url("../fontawesome/svgs/solid/sort-downc.svg");
+  background-size: 12px;
 }
 table.dataTable thead .sorting_asc_disabled {
   background-image: url("../images/sort_asc_disabled.png");
