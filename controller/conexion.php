@@ -3,9 +3,9 @@ $hostname_conexion = "localhost";  //conexion al hosting
 /*$database_conexion = "web2";  //nombre de la base de datos
 $username_conexion = "root"; //nombre de usuario
 $password_conexion = "";  //clave de usuario*/
-$database_conexion = "bolsa_trabajo";  //nombre de la base de datos
-$username_conexion = "root"; //nombre de usuario
-$password_conexion = "";  //clave de usuario
+$database_conexion = "adminjm_desarrollo_economico";  //nombre de la base de datos
+$username_conexion = "desarrollo_economico"; //nombre de usuario
+$password_conexion = "L3vUGV,V$b2Y";  //clave de usuario
 
 $conexion = mysqli_connect($hostname_conexion, $username_conexion, $password_conexion,$database_conexion);
 if(!$conexion)
