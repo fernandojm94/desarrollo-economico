@@ -15,7 +15,7 @@
 
 		foreach ($empresas as $empresa) 
 		{
-			$datos = $empresa["id"].",'".$empresa["nombre"]."','".$empresa["empresa"]."','".$empresa["domicilio"]."',".$empresa["telefono"].",'".$empresa["correo"]."','".$empresa["vacante"]."',".$empresa["cantidad"].",'".$empresa["genero"]."','".$empresa["edad"]."','".$empresa["escolaridad"]."','".$empresa["descripcion"]."','".$empresa["salario"]."','".$empresa["horario"]."','".$empresa["prestaciones"]."','".$empresa["observaciones"]."'";
+			$datos = $empresa["id"].",'".$empresa["nombre"]."','".$empresa["empresa"]."','".$empresa["domicilio"]."','".$empresa["vacante"]."',".$empresa["cantidad"].",'".$empresa["genero"]."','".$empresa["edad"]."','".$empresa["escolaridad"]."','".$empresa["descripcion"]."','".$empresa["salario"]."','".$empresa["horario"]."','".$empresa["prestaciones"]."','".$empresa["observaciones"]."'";
 
 			$vigencia = date_create($empresa['vigencia']);
 			$vigente = date_diff($fecha, $vigencia);

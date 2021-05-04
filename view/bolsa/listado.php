@@ -245,7 +245,7 @@
         xmlhttp.send(datos_modal);
 	}
 
-	function fill_modal_info_vacante(id, nombre, empresa, domicilio, telefono, correo, vacante, cantidad, genero, edad, escolaridad, descripcion, salario, horario, prestaciones, observaciones)
+	function fill_modal_info_vacante(id, nombre, empresa, domicilio, vacante, cantidad, genero, edad, escolaridad, descripcion, salario, horario, prestaciones, observaciones)
 	{
 
 		var xmlhttp;
@@ -269,7 +269,7 @@
             }
         }
 
-        var datos_modal = "id=" + id + "&nombre=" + nombre + "&empresa=" + empresa + "&domicilio=" + domicilio  + "&telefono=" + telefono  + "&correo=" + correo  + "&vacante=" + vacante  + "&cantidad=" + cantidad  + "&genero=" + genero  + "&edad=" + edad  + "&escolaridad=" + escolaridad  + "&descripcion=" + descripcion  + "&salario=" + salario  + "&horario=" + horario  + "&prestaciones=" + prestaciones  + "&observaciones=" + observaciones;
+        var datos_modal = "id=" + id + "&nombre=" + nombre + "&empresa=" + empresa + "&domicilio=" + domicilio  + "&vacante=" + vacante  + "&cantidad=" + cantidad  + "&genero=" + genero  + "&edad=" + edad  + "&escolaridad=" + escolaridad  + "&descripcion=" + descripcion  + "&salario=" + salario  + "&horario=" + horario  + "&prestaciones=" + prestaciones  + "&observaciones=" + observaciones;
 
         // waitingDialog.show('Cargando Información', {dialogSize: 'sm', progressType: 'warning'})
         xmlhttp.open("POST","./view/bolsa/modal_info_vacante.php",true);

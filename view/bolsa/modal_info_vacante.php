@@ -25,16 +25,6 @@
 		        		<div class="col-sm-8"><?= $_POST['domicilio']?></div>
 		        	</div></td></tr>
 
-		        	<!-- <tr><td><div class="row">
-		        		<div align="right" class="col-sm-4"><b>Teléfono:</b></div>
-		        		<div class="col-sm-8"><?= $_POST['telefono']?></div>
-		        	</div></td></tr>
-
-		        	<tr><td><div class="row">
-		        		<div align="right" class="col-sm-4"><b>Correo electrónico:</b></div>
-		        		<div class="col-sm-8"><?= $_POST['correo']?></div>
-		        	</div></td></tr> -->
-
 		        	<tr><td><div class="row">
 		        		<div align="right" class="col-sm-4"><b>Vacante:</b></div>
 		        		<div class="col-sm-8"><?= $_POST['vacante']?></div>
